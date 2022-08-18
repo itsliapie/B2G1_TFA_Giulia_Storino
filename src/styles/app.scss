@@ -63,6 +63,7 @@ p, h1, h2, h3, a{
 p, a{
     font-weight: 200;
     font-style: normal;
+    font-weight: 500;
 }
 
 h1, h2, h3{
@@ -115,7 +116,7 @@ h1, h2, h3{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background: var(--fill-dark);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     padding: 2rem 9%;
@@ -204,7 +205,7 @@ header label{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../images/home-bg-img@3x.png) no-repeat;
+    background: url(../assets/images/home-bg-img@3x.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -230,7 +231,6 @@ header label{
 .home__paragraph{
     font-size: 1.7rem;
     color: var(--fill-white);
-    width: 50ch;
     padding: 1rem 0;
 
 
@@ -290,7 +290,7 @@ header label{
 /* ABOUT */
 
 .about{
-    background:url(../images/about-bg@3x.png) no-repeat;
+    background:url(../assets/images/about-bg@3x.png) no-repeat;
     background-size: cover;
     background-position: center;
     padding-bottom: 3rem;
@@ -317,15 +317,16 @@ header label{
 }
 
 .about__subtitle{
-    font-size: 3rem;
+    font-size: 6rem;
     color:var(--color-secondary);
     text-transform: none;
 }
 
 .about__paragraph{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color:var(--fill-white);
     padding:1rem 0;
+    margin-bottom: 1rem;
 }
 
 
@@ -339,15 +340,15 @@ header label{
 
 
 .review{
-    width: 100%;
-    
-   
+    width: 100vw;
+ 
 }
+
 .review__wrap{
     position: relative;
-    width: 100%;
+    width: 100vw;
     max-width: 1020px;
-    padding: 9rem 7rem 2rem;
+    padding: 10rem 8rem 6rem;
     margin: auto;
     background-color: var(--fill-dark);
    
@@ -511,35 +512,69 @@ border-color: var(--color-secondary-lighter);
 /* FOOTER */
 
 .footer{
-    background-color: var(--fill-dark);
-    position: relative;
+    padding-top: 3rem;
+
 }
 
-.footer__nav{
+.footer__container{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    padding: 4rem 6rem;
-    font-size: 2rem;
 }
 
-.footer__nav-list{
-    display: flex;
+.footer__container-box{
+    flex: 1 1 25rem;
+    margin: 2rem;
+    margin-bottom: 6rem;
+    margin-left: 7rem;
+}
+
+.footer__subtitle, .footer__text{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: var(--fill-white);
+    
+}
+
+.footer__logo{
+    font-weight: 300;
+    text-transform: lowercase;
+    letter-spacing: .5px;
     text-align: center;
-
+    font-size: 3rem;
+    margin-left: 8rem;
 }
 
-.footer__nav-list li{
-    flex-direction: row;
-    padding: 3rem;
-    align-items: flex-end;
-    justify-content: right;
+.footer__text{
+    margin-top: -7%;
+   text-align: left;
+   margin-left: 11.8rem;
 }
 
-.footer__nav-list li a{
-    align-items: flex-end;
-   padding: 1rem;
+.footer__text, .footer__link{
+    font-size: 1.5rem;  
 }
+
+.footer__link{
+    display: block;
+    color: var(--fill-white);
+    text-transform: capitalize;
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: var(--fill-white);
+    border-top: .1rem solid var(--fill-white);
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+
 
 
 /* REVEAL ON SCROLL */
@@ -579,14 +614,14 @@ border-color: var(--color-secondary-lighter);
 
 @media screen and (max-width: 1200px){
     html{
-        font-size: 55%;
+        font-size: 65%;
         overflow-x: hidden;
     }
 }
 
 @media screen and (max-width: 991px){
     section{
-        padding: 0 3%;
+        padding: 1rem;
 
     }
 
@@ -597,7 +632,6 @@ border-color: var(--color-secondary-lighter);
     
     .about__column .image{
         flex:1 1 25rem;
-        transform: translateX(10%)
     }
     
     .about__column .image img{
@@ -605,8 +639,24 @@ border-color: var(--color-secondary-lighter);
     }
 
     .download__title{
-        font-size: 8rem;
+        font-size: 5rem;
     }
+
+    .download .buttons a:last-child{
+        margin: 0;
+
+    }
+
+  
+
+    // .footer__nav-list{
+    //     padding: 1%;
+    // }
+
+    // .footer__el.case-study, .logo--footer{
+    //     white-space: nowrap;
+    // }
+
 }
 
 
@@ -682,6 +732,13 @@ border-color: var(--color-secondary-lighter);
         background-position: right;
     }
 
+    
+    
+
+
+   
+
+
 
 }
 
@@ -704,7 +761,6 @@ border-color: var(--color-secondary-lighter);
 @media screen and (max-width: 1100px) {
     .container__box{
         height: 100%;
-        max-width: 70ch
     };
 }
 

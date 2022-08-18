@@ -99,4 +99,4 @@ function reveal(){
 
 var d = new Date();
 var n = d.getFullYear();
-document.querySelector(".annee").innerHTML = "©" + n;
+document.querySelector(".year").innerHTML = n;
