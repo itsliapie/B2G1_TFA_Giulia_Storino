@@ -7,7 +7,8 @@
     <title>Document</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/app.scss">
+    <link rel="stylesheet" href="styles/app.css">
+
    
     <!-- JS -->
 
@@ -58,11 +59,150 @@
 
     <div class="image">
         <img src="assets/images/home-img.png" srcset="assets/images/home-img@2x.png 2x, assets/images/home-img@3x.png 3x" class="move" data-speed="2" alt="app screenshot">
+    </div>
+</section>
+
+ <!-- FEATURES -->
+
+
+ <section class="features" id="features">
+    
+    <div class="features__container">
+
+        <div class="container__box container__box1 reveal">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3 class="features__subtitle">Completely free to download</h3>
+            <p class="features__paragraph">No in-app purchases, just a simple to use tool to help you discover new music based on specific parts of the songs you already love.</p>
+        </div>
+
+        <div class="container__box container__box2 reveal">
+            <i class="fa-solid fa-gears"></i>
+            <h3 class="features__subtitle">Fast and personalized</h3>
+            <p class="features__paragraph">Your playlists are generated automatically in a a matter of seconds and are 100% based on what kind of songs you want to discover.</p>
+        </div>
+
+        <div class="container__box container__box3 reveal">
+            <i class="fa-solid fa-user-shield"></i>
+            <h3 class="features__subtitle">Because we value your privacy</h3>
+            <p class="features__paragraph">Tunefinder is a third-party app that works with Spotify and Apple Music. We do not track your activity and your login information is safe and encrypted.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+    
+    <div class="about__column reveal">
+
+        <div class="image">
+            <img src="assets/images/about-img@3x.png" alt="">
+        </div>
+
+        <div class="about__content">
+            <h3 class="about__subtitle">Have you ever listened to a song that left you wanting more?</h3>
+            <p class="about__paragraph">Here's a perfect solution for you: thanks to new technology, Tunefinder can scan different tracks of a song and analyze it when searching for similar songs. This can be useful if you like a specific part of a song, a specific chord progression or even the key of the song, and wish to listen to similar music.</p>
+
+            <p class="about__paragraph"> Just log in with Spotify or Apple Music, and let us do the rest. Once you found your perfect playlist, you can save it to your Tunefinder profile and share it across platforms.</p>
+
+
+            <p class="about__paragraph">You won't need to endlessly search among millions of songs for ones that sound exactly like what you really love anymore!</p>
+            <div class="buttons">
+                <a href="#" class="btn"> <i class="fab fa-apple"></i>app store</a>
+                <a href="#" class="btn"> <i class="fab fa-google-play"></i> google play</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section class="review reveal" id="review">
+    <h2 class="heading">Some reviews:</h2>
+    <div class="review__wrap">
+
+        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+        <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+        <ul class="dots" id="review-dots">
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+        </ul>
+
+        <div class="cont" id="review-content">
+
+            <div class="active">
+                <div class="img"><img src="assets/images/pic1.png" srcset="assets/images/pic1@2x.png 2x, assets/images/pic1@3x.png 3x"></div>
+                <h2>Maya Garcia</h2>
+                <p>"Amazing app, I found so many new songs with it ! Would defenitely recommend."</p>
+            </div>
+            
+            <div>
+                <div class="img"><img src="assets/images/pic2.png" srcset="assets/images/pic2@2x.png 2x, assets/images/pic2@3x.png 3x"></div>
+                <h2>Theo J. Williams</h2>
+                <p>"Very efficient if you like to discover new songs daily."</p>
+            </div>
+            
+            <div>
+                <div class="img"><img src="assets/images/pic3.png" srcset="assets/images/pic3@2x.png 2x, assets/images/pic3@3x.png 3x"></div>
+                <h2>Sara Carvalho</h2>
+                <p>"You can even add your playlists and listen to them on Spotify! Love it."</p>
+            </div>
+            
+            <div>
+                <div class="img"><img src="assets/images/pic4.png" srcset="assets/images/pic4@2x.png 2x, assets/images/pic4@3x.png 3x"></div>
+                <h2>Amanda Lee</h2>
+                <p>"I love the fact that you can really pick apart different songs."</p>
+            </div>
+            
+            <div>
+                <div class="img"><img src="assets/images/pic5.png" srcset="assets/images/pic5@2x.png 2x, assets/images/pic5@3x.png 3x"></div>
+                <h2>Logan Pritchett</h2>
+                <p>A must-have for music lovers!</p>
+            </div>
+        </div>
 
     </div>
 </section>
 
+<!-- DOWNLOAD -->
+
+<div class="download reveal">
+    <h3 class="download__title">Start creating your playlists now.</h3>
+    <div class="buttons">
+        <a href="#" class="btn btn-get"> <i class="fab fa-apple"></i>app store</a>
+        <a href="#" class="btn btn-get"> <i class="fab fa-google-play"></i> google play</a>
+    </div>
+    <a href="#home" class="top">Back to top<i class="fa-solid fa-arrow-up"></i> </a>
+</div>
 
     
+<!-- FOOTER -->
+
+<footer class="footer reveal">
+    <nav class="footer__nav">
+
+        <a href="#home" class="logo">TUNEFINDER</a>
+        <a href="https://giuliastorino.be"><small>Giulia Storino <span class="annee"></span></small></a>
+
+
+        <ul class="footer__nav-list">
+            <li class="footer__el dwt"><a href="http://dwm.re" target=blank>DWT</a></li>
+            <li class="footer__el credits"><a href="credits.html">Crédits</a></li>
+            <li class="ui-kit"><a href="ui-kit.html">UI-Kit</a></li>
+            <li class="footer__el case-study"><a href="case-study.html">Case-study</a></li>
+
+        </ul>
+    </nav>
+</footer>
+
 </body>
 </html>
