@@ -1,6 +1,233 @@
-@import 'utils/variables';
-@import 'components/type';
+/* VARIABLES */
 
-.school-img {
-    width: 320px;
+:root{
+    --fill-dark: #14264A; 
+    --fill-darker: #0e1c36;
+    --color-secondary: #ed8eff;
+    --color-secondary-lighter: #ff8eef;
+    --fill-white: #fffdfd;
+    --gradient:linear-gradient(349deg, rgba(30,5,40,1) 0%, rgba(55,43,105,1) 29%, rgba(76,79,175,1) 61%, rgba(187,134,252,1) 96%, rgba(239,112,245,1) 100%);
+
+}
+
+
+/* RESET */
+
+*{
+    font-family: 'Gantari', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    transition: all .5s ease-in;
+    letter-spacing: 0.23px;
+
+}
+
+
+
+
+/* GENERAL */
+
+*::selection{
+    background: var(--color-secondary);
+    color: var(--fill-white);
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: var(--fill-darker);
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+
+}
+
+p, h1, h2, h3, a{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+  
+}
+
+p, a{
+    font-weight: 200;
+    font-style: normal;
+}
+
+h1, h2, h3{
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.2rem 3rem;
+    border-radius: 5rem;
+    background: var(--color-secondary);
+    font-size: 1.7rem;
+    color: var(--fill-darker);
+    cursor: pointer;
+    transition: .5s;
+    text-transform: uppercase;
+    font-family: 'Gantari', sans-serif;
+}
+
+.btn:hover{
+   background: var(--color-secondary-lighter);
+}
+
+
+.heading{
+    text-align: center;
+    background: var(--color-secondary);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.fa-solid, .fa-regular{
+    font-size: 6rem;
+    color: var(--color-secondary);
+}
+
+/* HEADER */
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--fill-dark);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    text-transform: capitalize;
+}
+
+.navbar__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+.navbar__item{
+    padding: .3rem .8rem;
+    margin-left: 2rem;
+    font-size: 1.39rem;
+    color: var(--fill-white);
+}
+
+.navbar__item:hover{
+    color: var(--color-secondary);
+}
+
+.navbar__download{
+    background-color:  var(--color-secondary);
+    border-radius: 30px;
+    padding: 1rem 2.3rem;
+    color: var(--fill-darker);
+    font-weight: 400;
+}
+
+.navbar__download:hover{
+    background-color:  var(--color-secondary-lighter);
+    color: var(--fill-darker);
+    
+}
+
+.logo{
+    font-size: 2rem;
+    color: var(--fill-white);
+    text-transform: lowercase;
+}
+
+.fa-logo{
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--fill-white);
+}
+
+header input{
+    display: none;
+}
+
+
+header label{
+    font-size: 3rem;
+    color: var(--color-secondary);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.btn-learn{
+    margin: 2rem;
+    background-color: unset;
+    border: 1px solid var(--color-secondary);
+    color: var(--fill-white);
+
+}
+
+.btn-learn:hover{
+    color: var(--fill-darker);
+}
+
+/* HOME */
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/home-bg-img@3x.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.home .image img{
+    width: 33vw;
+    transition: 0s;
+
+}
+
+
+.home__subtitle{
+    font-size: 7.5rem;
+    line-height: 1.2;
+    color: var(--fill-white);
+  
+  
+
+}
+
+.home__paragraph{
+    font-size: 1.7rem;
+    color: var(--fill-white);
+    width: 50ch;
+    padding: 1rem 0;
+
+
 }
