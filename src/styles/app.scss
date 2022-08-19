@@ -43,6 +43,8 @@ html{
     overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: var(--fill-darker);
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
 }
 
 section{
