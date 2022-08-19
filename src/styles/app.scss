@@ -7,7 +7,7 @@
     --color-secondary:#ed8eff;
     --color-secondary-lighter:#f994ff  ;
     --fill-white: #fffdfd;
-    --gradient:linear-gradient(349deg, rgba(237,142,255,1) 11%, rgba(140,181,255,1) 88%);
+    --gradient:linear-gradient(deg, rgba(14,28,54,1) 0%, rgba(20,38,74,1) 36%, rgba(150,115,217,1) 96%, rgba(237,142,255,1) 100%);
 }
 
 
@@ -664,6 +664,58 @@ border-color: var(--color-secondary-lighter);
     opacity: 1;
 }
 
+
+// CASE STUDY
+
+.case-study{
+    padding-top: 15rem;
+    line-height: 1.5;
+   
+}
+
+.case-study__container{
+  padding: 0 115px;
+}
+
+.container__wrapper{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 115px;
+    position: relative;
+    overflow-wrap: break-word;
+    font-size: 1.125rem;
+}
+
+.title{
+ font-size: 8rem;
+ padding-bottom: 3rem;
+ color: var(--color-secondary);
+}
+
+.subtitle{
+    font-size: 4rem;
+    color: var(--fill-white);
+    margin-bottom: -2%;
+    margin-top: 2%;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.case-study__p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.75;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+}
+
+.case-study__img{
+    display: block;
+    padding: 0;
+    border-radius: 3px;
+    max-width: 100%;
+}
 
 
 
