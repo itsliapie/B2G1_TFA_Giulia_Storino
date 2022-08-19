@@ -701,14 +701,21 @@ border-color: var(--color-secondary-lighter);
     text-transform: none;
 }
 
-.case-study__p{
+.case-study__p, .p__list-el{
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.75;
     margin-top: 1em;
     margin-bottom: 1em;
+    color: var(--fill-white);
 
 }
+
+.p__list-el{
+    list-style: none;
+    font-style: italic;
+}
+
 
 .case-study__img{
     display: block;
