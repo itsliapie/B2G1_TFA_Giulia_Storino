@@ -76,6 +76,7 @@ h1, h2, h3{
 
 
 .btn{
+   
     display: inline-block;
     margin-top: 1rem;
     padding: 1.2rem 3rem;
@@ -250,6 +251,10 @@ header label{
 
 
 /* HOME */
+
+.home:focus{
+    color: red;
+}
 
 .home{
     display: flex;
@@ -663,8 +668,6 @@ border-color: var(--color-secondary-lighter);
 }
 
 
-
-
 /* REVEAL ON SCROLL */
 
 .reveal{
@@ -757,8 +760,6 @@ border-color: var(--color-secondary-lighter);
 .credits{
     margin-top: 4rem;
 }
-
-
 
 
 /* MEDIA QUERIES */

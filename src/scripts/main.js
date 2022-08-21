@@ -1,5 +1,7 @@
 'use strict'
 
+import { gsap } from "gsap";
+
 //MOVE ANIMATION HOME
 
 document.addEventListener('mousemove', move);
@@ -100,3 +102,5 @@ function reveal(){
 var d = new Date();
 var n = d.getFullYear();
 document.querySelector(".year").innerHTML = n;
+
+
