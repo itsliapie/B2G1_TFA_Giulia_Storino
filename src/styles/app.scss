@@ -809,7 +809,7 @@ border-color: var(--color-secondary-lighter);
 
     
     .case-study__p, .p__list-el{
-        font-size: 1rem;
+        font-size: 1.8rem;
         font-weight: 300;
         line-height: 1.75;
         margin-top: 1em;
@@ -820,7 +820,7 @@ border-color: var(--color-secondary-lighter);
     }
 
     .p__list-el{
-        font-size: 1.7rem;
+        font-size: 1.97rem;
     }
     
     .p__list-el{
@@ -873,6 +873,15 @@ border-color: var(--color-secondary-lighter);
         font-size: 1.1rem;
     }
 
+    .section .review{
+        height: 100%;
+        margin-bottom: -30%;
+    }
+
+    .download{
+        margin-top: -30%;
+    }
+
 
 }
 
@@ -899,6 +908,12 @@ border-color: var(--color-secondary-lighter);
         padding: 4rem;
     }
 
+    .buttons a:last-child{
+        margin: 3%;
+        margin-left: 0;
+        
+    }
+
     .btn-learn{
         margin-left: .61rem;
     }
@@ -923,6 +938,10 @@ border-color: var(--color-secondary-lighter);
 
     .download__title{
         font-size: 5rem;
+    }
+
+    .btn-get{
+        margin-right: 3rem;
     }
 
 
@@ -953,6 +972,14 @@ border-color: var(--color-secondary-lighter);
 
     .container__wrapper{
         padding: 1rem;
+    }
+
+    .review{
+        margin-top: 8%;
+    }
+
+    .download{
+        margin-top: -16%;
     }
 
     
