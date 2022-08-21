@@ -747,6 +747,11 @@ border-color: var(--color-secondary-lighter);
     padding-top: 10%;
 }
 
+.case-study__p a{
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
 // CREDITS
 
 .container__box--credits{
